@@ -14,7 +14,7 @@ export default defineConfig({
       Config: "/src/Config",
       Layout: "/src/Layout",
       Redux: "/src/Redux",
-      Routes: "/src/Routes",
+      Routes: "/src/Routes", 
       Utils: "/src/Utils",
 
     }
