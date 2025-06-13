@@ -12,6 +12,7 @@ export default defineConfig({
       Pages: "/src/Pages",
       Assets: "/src/Assets",
       Layout: "/src/Layout",
+      Redux: "/src/Redux",
       UserData: "/src/UserData",
     }
   }

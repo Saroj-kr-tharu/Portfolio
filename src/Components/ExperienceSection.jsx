@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { experienceData } from 'UserData/UserData';
 
 // Sample experience data with icons instead of image paths
@@ -5,7 +6,15 @@ import { experienceData } from 'UserData/UserData';
 
 function ExperienceSection() {
   return (
-    <section id="experience" className="py-16 mt-4 sm:mt-10 text-white">
+    <motion.section
+    whileInView={{ y: 0, opacity: 1 }}
+       initial={{ y: -10, opacity: 0 }}
+       transition={{
+           y: { duration: 0.5, ease: "easeIn" },
+           opacity: { duration: 0.5, ease: "easeIn" },
+       }}
+
+    id="experience" className="py-16 mt-4 sm:mt-10 text-white">
       <div className="container mx-auto px-6 max-w-6xl">
         <h2 className="text-4xl font-bold mb-12">Work Experience</h2>
         
@@ -14,7 +23,15 @@ function ExperienceSection() {
             const Icon = experience.icon;
             
             return (
-              <div key={index} className="flex flex-col md:flex-row justify-between hover:scale-101 hover:cursor-pointer transition-transform duration-300 ease-in-out items-start md:items-center py-4 border-b border-gray-800">
+              <motion.div 
+              whileInView={{ y: 0, opacity: 1 }}
+              initial={{ y: 50, opacity: 0 }}
+              transition={{
+                  y: { duration: 0.5, ease: "easeIn" },
+                  opacity: { duration: 0.5, ease: "easeIn" },
+              }}
+
+              key={index} className="flex flex-col md:flex-row justify-between hover:scale-101 hover:cursor-pointer transition-transform duration-300 ease-in-out items-start md:items-center py-4 border-b border-gray-800">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-4 md:mb-0">
                   <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center p-3 text-blue-400">
                     <Icon className="w-8 h-8" />
@@ -28,12 +45,12 @@ function ExperienceSection() {
                 <div className="md:text-right">
                   <p className="text-gray-400 text-sm md:text-base">{experience.date}</p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

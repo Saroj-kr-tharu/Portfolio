@@ -11,6 +11,9 @@
       "Assets/*": [
         "src/Assets/*"
       ],
+      "Redux/*": [
+        "src/Redux/*"
+      ],
       "UserData/*": [
         "src/UserData/*"
       ],

@@ -1,12 +1,22 @@
+import { motion } from "framer-motion";
 import { connectDetails, skills } from 'UserData/UserData';
 
 function SkillAndConnect() {
   
 
   return (
-    <div className="flex flex-col ml-4 sm:ml-0 md:flex-row gap-8 mt-10 sm:mt-20">
+    <div className="flex flex-col mx-2 md:flex-row gap-8 mt-10 sm:mt-20">
+
       {/* Skills Section */}
-      <div className="bg-zinc-900 rounded-lg px-6 py-4 flex-1">
+      <motion.div 
+       whileInView={{ x: 0, opacity: 1 }}
+       initial={{ x: -100, opacity: 0 }}
+       transition={{
+           x: { duration: 0.5, ease: "easeIn" },
+           opacity: { duration: 0.5, ease: "easeIn" },
+       }}
+
+      className="bg-zinc-900 rounded-lg px-6 py-4 flex-1">
         <h2 className="text-2xl font-bold text-white mb-6">Skills</h2>
         <div className="flex flex-wrap gap-3">
           {skills.map((skill, index) => (
@@ -18,10 +28,18 @@ function SkillAndConnect() {
             </div>
             ))}
         </div>
-      </div>
-
+      </motion.div>
+ 
       {/* Connect Section */}
-      <div className="bg-zinc-900 rounded-lg px-6 py-4 flex-1">
+      <motion.div 
+      whileInView={{ x: 0, opacity: 1 }}
+       initial={{ x: 100, opacity: 0 }}
+       transition={{
+           x: { duration: 0.5, ease: "easeIn" },
+           opacity: { duration: 0.5, ease: "easeIn" },
+       }}
+
+      className="bg-zinc-900 rounded-lg px-6 py-4 flex-1">
         <h2 className="text-2xl font-bold text-white mb-6">Let's connect</h2>
         
         {/* Social Icons */}
@@ -50,7 +68,7 @@ function SkillAndConnect() {
             <p className="text-gray-300">{info.value}</p>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
