@@ -1,4 +1,3 @@
-import ImgSrc from "Assets/pp.jpg";
 import { FiMessageCircle } from "react-icons/fi";
 import { IoMdDownload } from "react-icons/io";
 
@@ -6,7 +5,7 @@ function HeroSection(){
     const data = {
         name: 'Saroj Kumar Tharu', 
         description: 'Full-stack developer & Freelancer crafting innovative digital solutions', 
-        imgsrc: ImgSrc,
+        imgsrc: '/pp.jpg',
         resumeFile: "/cv.pdf", 
         email: "sarojc11345@gmail.com"
     }
