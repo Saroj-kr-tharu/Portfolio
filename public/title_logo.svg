@@ -1,0 +1,78 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Modern gradient for S -->
+    <linearGradient id="sGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#45B7D1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#96CEB4;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Accent gradient -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667EEA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764BA2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="elegantGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Background subtle gradient -->
+    <radialGradient id="subtleBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.02" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Subtle background -->
+  <circle cx="64" cy="64" r="60" fill="url(#subtleBg)"/>
+  
+  <!-- Main "S" letterform - 2x Larger -->
+  <path d="M 90 10 Q 50 5 60 5 Q 100 5 110 30 Q 120 55 110 70 Q 100 85 70 90 Q 40 95 20 90 Q 10 85 15 100 Q 20 115 50 120 Q 80 125 110 115 Q 125 105 115 110 Q 105 115 90 118 Q 75 120 60 118 Q 45 115 30 105 Q 15 95 8 75" 
+        stroke="url(#sGradient)" 
+        stroke-width="12" 
+        fill="none" 
+        stroke-linecap="round"
+        filter="url(#elegantGlow)"/>
+  
+  <!-- Geometric accent elements - repositioned for larger S -->
+  <circle cx="15" cy="25" r="2" fill="url(#accentGradient)" opacity="0.6"/>
+  <circle cx="110" cy="35" r="1.5" fill="url(#accentGradient)" opacity="0.5"/>
+  <circle cx="12" cy="100" r="2.5" fill="url(#accentGradient)" opacity="0.7"/>
+  <circle cx="115" cy="105" r="1.8" fill="url(#accentGradient)" opacity="0.6"/>
+  
+  <!-- Connecting flow lines -->
+  <path d="M 15 50 Q 25 45 35 50 Q 25 55 15 50" 
+        stroke="url(#accentGradient)" 
+        stroke-width="1" 
+        fill="none" 
+        opacity="0.4"/>
+  
+  <path d="M 113 75 Q 103 70 93 75 Q 103 80 113 75" 
+        stroke="url(#accentGradient)" 
+        stroke-width="1" 
+        fill="none" 
+        opacity="0.4"/>
+  
+  <!-- Modern geometric shapes -->
+  <rect x="90" y="25" width="3" height="3" rx="1" fill="url(#sGradient)" opacity="0.5" transform="rotate(45 91.5 26.5)"/>
+  <rect x="12" y="95" width="4" height="4" rx="1" fill="url(#sGradient)" opacity="0.6" transform="rotate(30 14 97)"/>
+  
+  <!-- Subtle data points -->
+  <circle cx="80" cy="35" r="0.8" fill="#FF6B6B" opacity="0.4"/>
+  <circle cx="85" cy="92" r="1" fill="#4ECDC4" opacity="0.5"/>
+  <circle cx="30" cy="60" r="0.6" fill="#45B7D1" opacity="0.4"/>
+  
+  <!-- Elegant connecting arc - repositioned -->
+  <path d="M 100 50 Q 110 55 115 65 Q 110 70 105 60" 
+        stroke="url(#sGradient)" 
+        stroke-width="1.5" 
+        fill="none" 
+        opacity="0.3"/>
+</svg>
