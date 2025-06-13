@@ -11,6 +11,9 @@
       "Assets/*": [
         "src/Assets/*"
       ],
+      "UserData/*": [
+        "src/UserData/*"
+      ],
     }
   }
 }

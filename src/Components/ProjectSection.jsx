@@ -1,49 +1,7 @@
 import { FiExternalLink } from 'react-icons/fi';
+import { projectData } from 'UserData/UserData';
 
-const Project_data = [
-  {
-    title: 'Huminex',
-    details: 'AI Powered Recruiting Platform, Hire Talent with AI',
-    photo: '/images/projects/huminex.png', // Update with your image paths
-    link: 'https://example.com/huminex',
-    gradient_look: 'bg-gradient-to-br from-rose-200 to-rose-500'
-  },
-  {
-    title: 'Build Portfolio',
-    details: 'It is a portfolio builder tool where you can create your portfolio in minutes',
-    photo: '/images/projects/build-portfolio.png',
-    link: 'https://example.com/portfolio',
-    gradient_look: 'bg-gradient-to-br from-orange-300 to-orange-600'
-  },
-  {
-    title: 'Developer Think',
-    details: 'Blog website for developers to share their thoughts and ideas',
-    photo: '/images/projects/developer-think.png',
-    link: 'https://example.com/devthink',
-    gradient_look: 'bg-gradient-to-br from-teal-300 to-teal-600'
-  },
-  {
-    title: 'Neuranium',
-    details: 'AI Powered Call, Meeting and Email Analysis Platform',
-    photo: '/images/projects/neuranium.png',
-    link: 'https://example.com/neuranium',
-    gradient_look: 'bg-gradient-to-br from-amber-200 to-amber-500'
-  },
-  {
-    title: 'Resume Editor',
-    details: 'A resume editor tool where you can create your resume in minutes',
-    photo: '/images/projects/resume-editor.png',
-    link: 'https://example.com/resume',
-    gradient_look: 'bg-gradient-to-br from-indigo-400 to-purple-600'
-  },
-  {
-    title: 'Og Image Generator',
-    details: 'A og image generator tool where you can create og images in minutes',
-    photo: '/images/projects/og-generator.png',
-    link: 'https://example.com/og-generator',
-    gradient_look: 'bg-gradient-to-br from-blue-300 to-blue-500'
-  }
-];
+
 
 function ProjectSection() {
     return (
@@ -52,7 +10,7 @@ function ProjectSection() {
                 <h2 className="text-4xl font-bold mb-12 px-3 sm:px-10">Projects</h2>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
-                    {Project_data.map((project, index) => (
+                    {projectData.map((project, index) => (
                         <a 
                             key={index}
                             href={project.link}

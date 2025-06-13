@@ -1,23 +1,7 @@
-import { FaLaptopCode } from 'react-icons/fa';
-import { GiSquirrel } from 'react-icons/gi';
+import { experienceData } from 'UserData/UserData';
 
 // Sample experience data with icons instead of image paths
-const experienceData = [
-  {
-    title: "Next JS Developer",
-    role: "Frontend Developer",
-    date: "Nov 2024 - Present",
-    company_name: "The Squirrel",
-    icon: GiSquirrel
-  },
-  {
-    title: "React Developer",
-    role: "UI Developer",
-    date: "Jan 2023 - Oct 2024",
-    company_name: "Tech Innovations",
-    icon: FaLaptopCode
-  }
-];
+;
 
 function ExperienceSection() {
   return (
