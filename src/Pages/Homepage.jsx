@@ -12,14 +12,13 @@ function Homepage() {
     
 
     return(
+
         <Layout> 
             <HeroSection /> 
             <SkillAndConnect /> 
             <ExperienceSection /> 
             <ProjectSection />
             <Footer />
-
-       
         </Layout>
     )
 }

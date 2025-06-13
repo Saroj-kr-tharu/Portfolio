@@ -35,7 +35,7 @@ function Footer() {
            opacity: { duration: 0.5, ease: "easeIn" },
        }}
        
-        className="bg-gray-100 dark:bg-black py-4 px-6 mt-auto">
+        className="bg-gray-100 dark:bg-black py-4 px-6 mt-auto overflow-x-hidden">
             <div className="container mx-auto flex flex-row justify-around items-center">
                 <div className="text-gray-700 dark:text-gray-300 mb-4 sm:mb-0">
                     Copyright © {new Date().getFullYear()} {BaiscuserData.name}

@@ -5,7 +5,7 @@ function Layout({ children }) {
     <>
 
       <div className="min-h-[80vh] flex items-start justify-center">
-        <div className="w-full sm:w-9/12">{children}</div>
+        <div className="w-full sm:w-9/12 ">{children}</div>
       </div>
     </>
   );

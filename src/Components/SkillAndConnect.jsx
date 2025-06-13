@@ -5,7 +5,7 @@ function SkillAndConnect() {
   
 
   return (
-    <div className="flex flex-col mx-2 md:flex-row gap-8 mt-10 sm:mt-20">
+    <div className="flex flex-col mx-2 md:flex-row  gap-8 mt-10 sm:mt-20 overflow-x-hidden">
 
       {/* Skills Section */}
       <motion.div 

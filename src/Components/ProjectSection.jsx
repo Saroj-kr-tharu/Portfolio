@@ -12,7 +12,7 @@ function ProjectSection() {
            y: { duration: 0.5, ease: "easeIn" },
            opacity: { duration: 0.5, ease: "easeIn" },
        }}
-        className="py-16 bg-black mb-2 sm:mb-10 text-white">
+        className="py-16 bg-black mb-2 sm:mb-10 text-white overflow-x-hidden">
             <div className="container mx-auto px-2 sm:px-4">
                 <h2 className="text-4xl font-bold mb-12 px-2 sm:px-10">Projects</h2>
                 
@@ -26,6 +26,8 @@ function ProjectSection() {
                                     opacity: { duration: 0.2, ease: "easeInOut" },
                                     x: { duration: 0.2, ease: "easeInOut" },
                                 }}
+
+                                viewport={{  once:true }}
                                 
                                 
                             key={index}
