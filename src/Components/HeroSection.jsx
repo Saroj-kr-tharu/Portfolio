@@ -1,4 +1,3 @@
-import resume from "Assets/cv.pdf";
 import ImgSrc from "Assets/pp.jpg";
 import { FiMessageCircle } from "react-icons/fi";
 import { IoMdDownload } from "react-icons/io";
@@ -8,14 +7,14 @@ function HeroSection(){
         name: 'Saroj Kumar Tharu', 
         description: 'Full-stack developer & Freelancer crafting innovative digital solutions', 
         imgsrc: ImgSrc,
-        resumeFile: "/resume.pdf", 
+        resumeFile: "/cv.pdf", 
         email: "sarojc11345@gmail.com"
     }
 
     // Handle resume download
       const handleResumeDownload = () => {
         // Using window.open for more reliable download behavior
-        window.open(resume, '_blank');
+        window.open(data.resumeFile, '_blank');
     };
     
 
