@@ -11,12 +11,7 @@ export default defineConfig({
       Components: "/src/Components",
       Pages: "/src/Pages",
       Assets: "/src/Assets",
-      Config: "/src/Config",
       Layout: "/src/Layout",
-      Redux: "/src/Redux",
-      Routes: "/src/Routes", 
-      Utils: "/src/Utils",
-
     }
   }
 });

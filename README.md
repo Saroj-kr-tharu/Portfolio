@@ -1,12 +1,60 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive portfolio website built with React and Vite to showcase my projects, skills, and professional background.
 
-Currently, two official plugins are available:
+![Portfolio Preview](./src/assets/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- Responsive design that works on all devices
+- Dark/Light theme toggle
+- Project showcase with filtering options
+- Skills and technology section
+- Contact form with validation
+- Smooth animations and transitions
+- SEO optimized
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+- React.js
+- Vite
+- Tailwind CSS
+- React Router
+- Email.js for contact form
+
+## 📋 Installation and Setup
+
+1. Clone this repository
+```bash
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start development server
+```bash
+npm run dev
+```
+
+4. Build for production
+```bash
+npm run build
+```
+
+## 🔧 Customization
+
+Edit the following files to personalize your portfolio:
+
+- `src/data/projects.js` - Add your projects
+- `src/data/skills.js` - Update your skills
+- `src/data/experience.js` - Add your work experience
+- `src/components/About.jsx` - Edit your about section
+
+## 📝 License
+
+MIT License - feel free to use and modify as you wish!
+
