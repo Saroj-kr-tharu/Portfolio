@@ -33,12 +33,16 @@ function HeroSection(){
                     staggerChildren: 0.1 
                 }}
                 viewport={{  margin: "-50px" }}
-                className="w-28 h-28 md:w-36 lg:w-40 md:h-36 lg:h-40 rounded-full border-indigo-500 border-4 p-1 flex items-center justify-center shadow-lg">
+
+
+                className="w-36 h-36 md:w-36 lg:w-45 md:h-36 lg:h-45 rounded-full border-indigo-500 border-4 p-1 hover:cursor-pointer flex items-center justify-center shadow-lg
+                
+                ">
                     <div className="w-full h-full overflow-hidden rounded-full border-2 border-indigo-500">
                         <img 
                             src={BaiscuserData.imgsrc} 
                             alt={BaiscuserData.name}
-                            className="w-full h-full object-cover rounded-full" 
+                            className="w-full h-full transition-all duration-300 ease-in-out transform hover:scale-115 object-cover rounded-full" 
                         />
                     </div>
                 </motion.div>
@@ -76,7 +80,8 @@ function HeroSection(){
                     viewport={{ once: true }}
 
                         onClick={handleResumeDownload}
-                        className="flex items-center  justify-center md:justify-start px-0 sm:px-4 md:px-6 py-2 md:py-3 border-1 border-white rounded-lg hover:cursor-pointer hover:bg-white hover:border-indigo-900 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 w-full md:w-auto"
+                        className="flex items-center  justify-center md:justify-start px-0 sm:px-4 md:px-6 py-2 md:py-3 border-1 border-white rounded-lg hover:cursor-pointer hover:bg-white hover:border-indigo-900 hover:text-black
+                         transition-all duration-300 ease-in-out transform hover:scale-105 w-full md:w-auto"
                     >
                         <span className="mr-2 text-xl md:text-2xl"><IoMdDownload /></span> Download Resume
                     </motion.button>
