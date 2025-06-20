@@ -31,7 +31,7 @@ function ExperienceSection() {
                   opacity: { duration: 0.5, ease: "easeIn" },
               }}
 
-              key={index} className="flex flex-col md:flex-row justify-between hover:scale-101 hover:cursor-pointer transition-transform duration-300 ease-in-out items-start md:items-center py-4 border-b border-gray-800">
+              key={index} className="flex flex-col md:flex-row justify-between hover:scale-101 hover:cursor-pointer transition-transform duration-300 ease-in-out items-start md:items-center py-4 border-b border-base">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-4 md:mb-0">
                   <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center p-3 text-blue-400">
                     <Icon className="w-8 h-8" />
