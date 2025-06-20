@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -8,6 +9,12 @@ import { BaiscuserData } from '../UserData/UserData';
 function Footer() {
     const dispatch = useDispatch();
     const { theme, dark } = useSelector(state => state.theme);
+
+   useEffect(() => {
+        if (dark) {
+            document.documentElement.setAttribute('data-theme', theme);
+        }
+        }, [dark, theme])
     
     const handleToggle = () => {
     // Toggle between 'dark' and 'cupcake' themes
@@ -24,7 +31,9 @@ function Footer() {
     } else {
         document.documentElement.classList.remove('dark');
     }
-};
+        };
+
+    
     
     return (
         <motion.footer

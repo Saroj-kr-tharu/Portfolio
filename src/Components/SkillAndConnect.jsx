@@ -7,7 +7,7 @@ function SkillAndConnect() {
   const {  dark } = useSelector(state => state.theme);
 
   return (
-    <div className="flex flex-col mx-2 md:flex-row  gap-8 mt-10 sm:mt-20 overflow-x-hidden">
+    <div className="flex flex-col  mx-2 md:flex-row  gap-8 mt-10 sm:mt-20 overflow-x-hidden">
 
       {/* Skills Section */}
       <motion.div 
@@ -17,7 +17,7 @@ function SkillAndConnect() {
            x: { duration: 0.5, ease: "easeIn" },
            opacity: { duration: 0.5, ease: "easeIn" },
        }}
-  className={` ${dark ? "bg-zinc-900" : "bg-base-300"  }   rounded-lg px-6 py-4 flex-1`} >
+          className={` ${dark ? "bg-zinc-900 text-white/80" : "bg-base-300"  }   rounded-lg px-6 py-4 flex-1`} >
        {/* className=" bg-zinc-900 rounded-lg px-6 py-4 flex-1"> */}
         <h2 className="text-2xl font-bold  mb-6">Skills</h2>
         <div className="flex flex-wrap gap-3">
@@ -41,7 +41,7 @@ function SkillAndConnect() {
            opacity: { duration: 0.5, ease: "easeIn" },
        }}
 
-         className={` ${dark ? "bg-zinc-900 " : "bg-base-300"  }   rounded-lg px-6 py-4 flex-1`} >
+         className={` ${dark ? "bg-zinc-900 text-white/80" : "bg-base-300"  }   rounded-lg px-6 py-4 flex-1`} >
         <h2 className="text-2xl font-bold  mb-6">Let's connect</h2>
         
         {/* Social Icons */}

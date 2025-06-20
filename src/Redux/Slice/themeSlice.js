@@ -1,8 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+
+
+const userHasSavedPreference = localStorage.getItem('themeStatus') !== null;
+const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
 const initialState = {
     theme: localStorage.getItem('theme') || 'dark',
-    dark: localStorage.getItem('themeStatus') === 'false' ? false : true
+    dark: userHasSavedPreference 
+        ? localStorage.getItem('themeStatus') === 'false' ? false : true
+        : systemPrefersDark
 };
 
 const themeSlice = createSlice({

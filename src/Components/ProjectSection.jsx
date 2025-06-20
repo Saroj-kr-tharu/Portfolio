@@ -12,7 +12,7 @@ function ProjectSection() {
            y: { duration: 0.5, ease: "easeIn" },
            opacity: { duration: 0.5, ease: "easeIn" },
        }}
-        className="py-16 dark:bg-black mb-2 sm:mb-10  overflow-x-hidden">
+        className="py-16  mb-2 sm:mb-10  overflow-x-hidden">
             <div className="container mx-auto px-2 sm:px-4">
                 <h2 className="text-4xl font-bold mb-12 px-2 sm:px-10">Projects</h2>
                 

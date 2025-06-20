@@ -2,10 +2,12 @@ import { Animation_Counter } from 'Components/Animation_Counter';
 import { motion } from "framer-motion";
 import { FiMessageCircle } from "react-icons/fi";
 import { IoMdDownload } from "react-icons/io";
+import { useSelector } from 'react-redux';
 import { BaiscuserData } from 'UserData/UserData';
 
 function HeroSection(){
    
+    const { dark } = useSelector(state => state.theme);
 
     // Handle resume download
       const handleResumeDownload = () => {
@@ -19,9 +21,11 @@ function HeroSection(){
         window.location.href = `mailto:${BaiscuserData.email}?subject=Let's Connect&body=Hi Saroj, I would like to connect with you.`;
     };
 
+      
+ 
     return(
         <div>
-            <div id="hero" className="flex  flex-col items-center gap-y-2 md:gap-y-3 mt-4 md:mt-6 px-4">
+            <div id="hero" className={`flex      flex-col items-center gap-y-2 md:gap-y-3 mt-4 md:mt-6 px-4 `}>
 
                 {/* Profile avatar */}
                 <motion.div 
