@@ -2,5 +2,5 @@
 @plugin "daisyui";
 
 @plugin "daisyui" {
-    themes: light --default, black --prefersdark cupcake bumblebee;
+    themes: lofi --default, black --prefersdark, cupcake, valentine, garden, forest, aqua, lofi, dracula, night, coffee;
 }

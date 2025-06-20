@@ -14,7 +14,7 @@ function ExperienceSection() {
            opacity: { duration: 0.5, ease: "easeIn" },
        }}
 
-    id="experience" className="py-16 mt-4 sm:mt-10 text-white">
+    id="experience" className="py-16 mt-4 sm:mt-10 ">
       <div className="container mx-auto px-6 max-w-6xl">
         <h2 className="text-4xl font-bold mb-12">Work Experience</h2>
         

@@ -11,7 +11,7 @@ function Footer() {
     
     const handleToggle = () => {
     // Toggle between 'dark' and 'cupcake' themes
-    const newTheme = theme === 'dark' ? 'cupcake' : 'dark';
+    const newTheme = theme === 'dark' ? 'lofi' : 'dark';
     // Just dispatch the new theme name
     dispatch(setTheme(newTheme));
     
@@ -35,15 +35,15 @@ function Footer() {
            opacity: { duration: 0.5, ease: "easeIn" },
        }}
        
-        className="bg-gray-100 dark:bg-black py-4 px-6 mt-auto overflow-x-hidden">
+        className="  py-4 px-6 mt-auto overflow-x-hidden">
             <div className="container mx-auto flex flex-row justify-around items-center">
-                <div className="text-gray-700 dark:text-gray-300 mb-4 sm:mb-0">
+               <div className={`${dark ? "text-gray-50" : "text-gray-700"} mb-4 sm:mb-0`}>
                     Copyright © {new Date().getFullYear()} {BaiscuserData.name}
                 </div>
                 
                 <button 
                     onClick={handleToggle}
-                    className="flex items-center justify-center -mt-4 sm:mt-0 sm:w-10 sm:h-10 rounded-full bg-white dark:bg-gray-700 shadow-md hover:shadow-lg transition-all duration-300"
+                    className="flex items-center justify-center -mt-4 sm:mt-0 sm:w-10 sm:h-10 rounded-full  dark:bg-gray-700 shadow-md hover:shadow-lg transition-all duration-300"
                     aria-label="Toggle dark mode"
                 >
                     {dark ? (
