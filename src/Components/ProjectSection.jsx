@@ -31,7 +31,7 @@ function ProjectSection() {
                                 
                                 
                             key={index}
-                            href={project.link}
+                            href={project.live_link || project.github_link}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={`block rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-transform duration-300 hover:-translate-y-1 hover:cursor-pointer hover:scale-102 ${project.gradient_look}`}
@@ -48,10 +48,32 @@ function ProjectSection() {
                                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                                 <p className="text-sm text-justify text-white/80">{project.details}</p>
                                 
-                                <div className="flex items-center mt-4 text-white/70 hover:text-white">
-                                    <span className="text-sm">View Project</span>
-                                    <FiExternalLink className="ml-1" />
+                                <div className="flex flex-row gap-x-4 ">
+                                    {project.github_link && (
+                                    <a 
+                                        href={project.github_link}
+                                        target="_blank"
+                                        rel="noopener noreferrer" 
+                                        className="flex items-center text-white/70 hover:text-white transition-colors"
+                                    >
+                                        <span className="text-sm">View GitHub</span>
+                                        <FiExternalLink className="ml-1" />
+                                    </a>
+                                )}
+            
+                                {project.live_link && (
+                                    <a 
+                                        href={project.live_link}
+                                        target="_blank"
+                                        rel="noopener noreferrer" 
+                                        className="flex items-center text-white/70 hover:text-white transition-colors"
+                                    >
+                                        <span className="text-sm">View Live</span>
+                                        <FiExternalLink className="ml-1" />
+                                    </a>
+                                )}
                                 </div>
+
                             </div>
                         </motion.a>
                     ))}
