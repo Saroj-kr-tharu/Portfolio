@@ -31,8 +31,15 @@ export const experienceData = [
 // Projects portfolio
 export const projectData = [
   {
+    title: 'ChatWithPDF',
+    details: 'An AI-powered RAG application enabling interactive conversations with uploaded PDF, DOCX, and CSV documents using Google Gemini, LangChain, FAISS vectorization, and Streamlit interface.',
+    photo: '/images/projects/chatWithPDF.jpg',
+    github_link: 'https://github.com/Saroj-kr-tharu/Chat_With_PDF',
+    gradient_look: 'bg-gradient-to-br from-blue-400 to-blue-600'
+  },
+  {
     title: 'QBitZone',
-    details: 'Landing Page for Agency built with Next.js and implemented with CI/CD pipeline.',
+    details: 'Modern agency landing page built with Next.js, featuring responsive design, fast performance, and automated CI/CD deployment for seamless updates and reliability.',
     photo: '/images/projects/qbitzone.png',
     live_link: 'https://qbitzone.com/',
     gradient_look: 'bg-gradient-to-br from-rose-200 to-rose-500'
@@ -53,21 +60,21 @@ export const projectData = [
     gradient_look: 'bg-gradient-to-br from-teal-300 to-teal-600'
   },
   {
-   title: 'AI Driven Melody Generator',
-details: 'An AI-powered tool that predicts and generates the next chord or melody based on input sequences. Creates harmonious musical progressions using machine learning algorithms.',
+    title: 'AI Driven Melody Generator',
+    details: 'An AI-powered tool that predicts and generates the next chord or melody based on input sequences. Creates harmonious musical progressions using machine learning algorithms.',
     photo: '/images/projects/AI_Driven_Melody_Generatro.png',
     github_link: 'https://github.com/Saroj-kr-tharu/AI_Driver_Melody_Generator',
-    gradient_look: 'bg-gradient-to-br from-amber-200 to-amber-500'
+    gradient_look: 'bg-gradient-to-br from-red-400 to-red-600'
   },
   {
-   title: 'Airline Ticket Booking API',
-details: 'A microservice  system for airline ticket reservations with features for flight search, booking management, and payment processing. Built with Node.js and Express following microservice architecture.',
+    title: 'Airline Ticket Booking API',
+    details: 'A microservice  system for airline ticket reservations with features for flight search, booking management, and payment processing. Built with Node.js and Express following microservice architecture.',
     photo: '/images/projects/AirlineBackendSsytem.png',
     github_link: 'https://github.com/Saroj-kr-tharu/Airline_Backend_Microservice',
     gradient_look: 'bg-gradient-to-br from-indigo-400 to-purple-600'
   },
   {
-   title: 'Todo WebApp',
+    title: 'Todo WebApp',
     details: 'A task management application with complete CRUD operations allowing users to create, update and delete tasks. Features user authentication and authorization for secure personal task lists.',
     photo: '/images/projects/TodoWebApp.png',
     github_link: 'https://github.com/Saroj-kr-tharu/TodoApp',
@@ -81,7 +88,7 @@ details: 'A microservice  system for airline ticket reservations with features f
     gradient_look: 'bg-gradient-to-br from-violet-400 to-slate-800'
   },
   {
-   title: 'Url Shortner',
+    title: 'Url Shortner',
     details: 'A Node.js microservice for URL analytics with RabbitMQ integration for message brokering and cron jobs for scheduling reminder notifications. Part of a larger URL shortening system architecture.',
     photo: '/images/projects/urlShortner.png',
     github_link: 'https://github.com/Saroj-kr-tharu/UrlShortnerAnalyticMicroSerivce',
