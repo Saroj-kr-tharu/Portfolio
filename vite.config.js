@@ -15,5 +15,9 @@ export default defineConfig({
       Redux: "/src/Redux",
       UserData: "/src/UserData",
     }
-  }
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+  },
 });

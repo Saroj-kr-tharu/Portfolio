@@ -1,0 +1,17 @@
+volumes:
+  portfolio_vol:
+
+services:
+  weather_app: 
+    image: sarojdockerworkspace/portfolio_app:latest
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: weather_app 
+    ports:
+      - 5173:5173
+    volumes: 
+      - .:/portfolio/fortend
+      - portfolio_vol:/portfolio/fortend/node_modules
+    command: > 
+      sh -c " npm install && npm run dev "
