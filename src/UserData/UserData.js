@@ -1,9 +1,9 @@
-import { FaEnvelope, FaGithub, FaInstagram, FaLaptopCode, FaLinkedin, FaMapMarkerAlt, FaTwitter, FaUserTie } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLaptopCode, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
 
 // User's basic information
 export const BaiscuserData = {
     name: 'Saroj Kumar Tharu', 
-    description: 'Full-stack developer & Freelancer crafting innovative digital solutions', 
+    description: ` Full Stack Engineer | JS, Microservice, Monolith AWS , Docker, K8S | Delivering 50% Efficiency Gains through Scalable Cloud Apps `, 
     imgsrc: '/pp.jpg',
     resumeFile: "/cv.pdf", 
     email: "sarojc11345@gmail.com"
@@ -11,19 +11,26 @@ export const BaiscuserData = {
 
 // Work experience details
 export const experienceData = [
+  {
+    title: "Full Stack  Engineer (Intern)",
+    role: "Full Stack Engineer",
+    date: "Aug 2025 - Present",
+    company_name: "MyPay",
+    icon: FaLaptopCode
+},
  {
-    title: "Full Stack Developer",
-    role: "Full Stack Developer",
-    date: "Jun 2024 - Present",
+    title: "Software Engineer (Remote) ",
+    role: "Software Engineer",
+    date: "May 2024 - Present",
     company_name: "Freelancer",
     icon: FaLaptopCode
 },
  {
-    title: "Full Stack Developer",
-    role: "Full Stack Developer",
-    date: "Jan 2023 - Jun 2024",
-    company_name: "Self Employed",
-    icon: FaUserTie
+    title: "Full Stack Engineer (Contract Based) ",
+    role: "Full Stack Engineer",
+    date: "Jul 2024 - Feb 2025",
+    company_name: "QBITZONE",
+    icon: FaLaptopCode
 },
  
 ];
@@ -111,16 +118,8 @@ export const connectDetails = {
         url: 'https://www.linkedin.com/in/saroj-kumar-tharu-96058b287/?originalSubdomain=np', 
         icon: FaLinkedin 
       },
-      { 
-        name: 'Twitter', 
-        url: 'https://twitter.com/yourhandle', 
-        icon: FaTwitter 
-      },
-      { 
-        name: 'Instagram', 
-        url: 'https://www.instagram.com/sarojkrtharu?igsh=NXd6N29lNDRyczZv', 
-        icon: FaInstagram 
-      }
+      
+     
     ],
     contactInfo: [
       {
@@ -143,6 +142,7 @@ export const skills = [
     
     { name: 'Next JS', category: 'frontend' },
     { name: 'React', category: 'frontend' },
+    { name: 'Angular', category: 'frontend' },
     { name: 'Framer Motion', category: 'frontend' },
     { name: 'Daisy Ui', category: 'frontend' },
     { name: 'JavaScript', category: 'frontend' },
@@ -153,17 +153,20 @@ export const skills = [
     { name: 'RabbitMQ', category: 'backend' },
     
     { name: 'MongoDB', category: 'database' },
-    { name: 'VectorDB', category: 'database' },
     { name: 'MySql', category: 'database' },
+    { name: 'Postgresl', category: 'database' },
+    { name: 'VectorDB', category: 'database' },
 
     { name: 'AWS', category: 'cloud' },
+    { name: 'K8S', category: 'cloud' },
     { name: 'Docker', category: 'cloud' },
     { name: 'Python', category: 'cloud' },
     { name: 'CI CD', category: 'cloud' },
+    { name: 'Jenkins', category: 'cloud' },
 
     { name: 'Vercel', category: 'deployment' },
     { name: 'Git', category: 'tool' },
-    { name: 'Ai/Ml', category: 'technology' }
+    
 ];
 
 // Default export for all data
