@@ -49,7 +49,6 @@ export const projectData = [
     details: 'Event-driven microservices backend (Auth, Payment, Reminder) using RabbitMQ for inter-service messaging, with a hybrid SQL/NoSQL data layer via Sequelize (MySQL) and Mongoose (MongoDB). Automated notification pipelines reduced missed bookings by 25%',
     photo: '/images/projects/BookMyCinema.png',
     github_link: 'https://github.com/Saroj-kr-tharu/OnlineMovieBooking-Fortend',
-    live_link: 'https://online-movie-booking-fortend.vercel.app/',
     gradient_look: 'bg-gradient-to-br from-orange-300 to-orange-600'
   },
   
